@@ -12,7 +12,7 @@ public class Player {
 
     public Vybor getZnacheniye() {
         System.out.println("что вы хотите поставить");
-        System.out.println("1 - камень, 2 - ножницы, 3 - бумага");
+        System.out.println("1 - камень, 2 - ножницы, 3 - бумага, 4- Ящерица, 5 - Спок");
         Scanner scanner = new Scanner(System.in);
         Integer user = scanner.nextInt();
         if (user == 1){
@@ -21,6 +21,10 @@ public class Player {
             znacheniye = Vybor.SCISSORS;
         }else if (user == 3){
             znacheniye = Vybor.PAPER;
+        }else if (user == 4){
+            znacheniye = Vybor.LIZARD;
+        }else if (user == 5 ){
+            znacheniye = Vybor.SPOK;
         }
         return znacheniye;
     }
