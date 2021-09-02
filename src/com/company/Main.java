@@ -32,8 +32,9 @@ public class Main {
     public static void print(){
         Integer total = wons + loses + ties;
         double percant = 100.0 / total * wons;
-        System.out.println("|Wons  | Loses | Ties  | Percant of wins    ");
-        System.out.println(String.format("| %d   |  %d    |  %d    | %f      ", wons, loses ,ties, percant));
+        String f = "|%-7s|%-7s|%-7s|%-13s|";
+        System.out.println("|Wons  | Loses | Ties   | Percant of wins    ");
+        System.out.println(String.format(f, wons, loses ,ties, percant));
     }
 
 

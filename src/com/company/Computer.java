@@ -31,6 +31,7 @@ public class Computer {
         }
         return znacheniye;
     }
+
     public Vybor getZnazheniye(){
         Random random = new Random();
         Integer i = random.nextInt(3);
