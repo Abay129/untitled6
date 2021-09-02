@@ -19,10 +19,8 @@ public class Player {
             znacheniye = Vybor.ROCK;
         }else if (user == 2){
             znacheniye = Vybor.SCISSORS;
-
         }else if (user == 3){
             znacheniye = Vybor.PAPER;
-
         }
         return znacheniye;
     }

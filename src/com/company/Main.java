@@ -8,7 +8,17 @@ public class Main {
     public static void main(String[] args) {
         Computer computer = new Computer();
         Player player = new Player();
-        sravnit(player, computer);
+        for (int p = 0; p <6; p++){
+            sravnit(player, computer);
+        }
+        print();
+    }
+
+    public static void print(){
+        Integer total = wons + loses + ties;
+        double percant = 100.0 / total * wons;
+        System.out.println("|Wons  | Loses | Ties  | Percant of wins    ");
+        System.out.println(String.format("| %d   |  %d    |  %d    | %d       ", wons, loses ,ties, percant));
     }
 
 
