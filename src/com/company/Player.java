@@ -15,6 +15,7 @@ public class Player {
         System.out.println("1 - камень, 2 - ножницы, 3 - бумага, 4- Ящерица, 5 - Спок");
         Scanner scanner = new Scanner(System.in);
         Integer user = scanner.nextInt();
+        new NeToChisloEceptionHard(user);
         if (user == 1) {
             znacheniye = Vybor.ROCK;
         } else if (user == 2) {
